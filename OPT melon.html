@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancaman Hama dan Penyakit Melon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px; /* menambahkan border-radius */
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: none; /* Awalnya disembunyikan */
+        }
+
+        .slide-active {
+            display: block;
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 80%; /* Diperkecil menjadi 80% */
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto; /* Tengah secara horizontal */
+            display: block;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.7); /* Lebih gelap agar lebih jelas */
+            border: none;
+            color: white;
+            padding: 15px; /* Ukuran tombol diperbesar */
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%; /* Membuat tombol menjadi bulat */
+            transition: background-color 0.3s ease;
+        }
+.nav-button:hover {
+    background-color: rgb(0, 0, 0, 0.9);
+}
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Gaya untuk info-card */
+        .info-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-card img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            max-width: 300px;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .slider {
+                margin: 10px auto;
+            }
+
+            .info-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info-card img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ancaman Hama dan Penyakit Melon: Cara Mengenali dan Mengatasinya</h1>
+        <p>Siapa sih yang nggak kenal buah melon? Selain rasanya yang manis dan segar, buah ini memang jadi favorit banyak orang karena kandungan airnya yang tinggi bikin seger banget! Tapi, di balik kenikmatannya, melon punya tantangan tersendiri buat petani, lho. Tanaman melon ternyata rawan banget diserang berbagai hama dan penyakit yang bisa bikin panen jadi nggak maksimal. Makanya, penting banget buat petani tahu gimana cara mengenali dan mengatasi masalah-masalah ini supaya hasil panennya tetap top!</p>
+
+        <div class="info-section">
+            <div class="info-card">
+                <img src="images/melon greenhouse.png" alt="Tanaman Melon Sehat 1">
+                <p>Tanaman melon sehat dengan daun hijau segar, pertumbuhan yang baik tanpa serangan hama.</p>
+            </div>
+            <div class="info-card">
+                <img src="images/melon 2kg.png" alt="Tanaman Melon Sehat 2">
+                <p>Buah melon yang sehat, siap dipanen tanpa adanya tanda-tanda penyakit atau hama.</p>
+            </div>
+        </div>
+
+        <p>Salah satu musuh utama melon yang sering banget muncul tanpa kita sadari adalah <a href="https://arifditlin.wordpress.com/2024/10/17/kutu-daun-pada-tanaman-melon/" target="_blank">kutu daun</a>. Hama kecil ini suka banget nyerang bagian pucuk tanaman dan menghisap cairan di dalam sel-sel daun. Akibatnya, daun jadi melengkung dan pertumbuhan melon pun jadi terhambat. Kalau dibiarkan, populasi kutu daun ini bisa meledak dan pastinya bikin petani rugi besar.</p>
+
+        <p>Selain kutu daun, <a href="https://arifditlin.wordpress.com/2024/10/17/layu-fusarium-fusarium-oxysporum-f-sp-melonis-ancaman-serius-bagi-tanaman-melon/" target="_blank">penyakit layu fusarium</a> juga jadi ancaman serius buat tanaman melon. Penyakit yang disebabkan oleh jamur Fusarium oxysporum ini bikin tanaman tiba-tiba layu dan mati. Seremnya lagi, jamur ini bisa bertahan di tanah selama bertahun-tahun! Jadi, begitu tanaman kena, bakal susah banget ngatasinnya. Nggak heran kalau penyakit layu fusarium ini jadi momok bagi petani melon di mana-mana.</p>
+        
+        <p>Nggak cuma itu, <a href="https://arifditlin.wordpress.com/2024/10/17/ulat-grayak-spodoptera-litura-ancaman-serius-bagi-tanaman-melon/" target="_blank">ulat grayak</a> dan <a href="https://arifditlin.wordpress.com/2024/10/17/embun-bulu-pseudoperonospora-cubensis-ancaman-bagi-pertumbuhan-tanaman-melon/" target="_blank">penyakit embun bulu</a> juga sering banget jadi masalah di kebun melon. Ulat grayak bisa merusak daun-daun tanaman dengan cepat, sementara embun bulu bikin daun menguning dan tanaman jadi nggak bisa berfotosintesis dengan baik. Ini tentu saja bakal berdampak langsung ke produktivitas tanaman. Jadi, penting banget buat petani kenal gejala-gejala awal serangan hama dan penyakit ini supaya bisa segera ambil langkah pengendalian.</p>
+        
+        <p>Satu lagi ancaman yang sering kali bikin petani melon pusing adalah <a href="https://arifditlin.wordpress.com/2024/10/17/virus-mosaik-pada-tanaman-melon/" target="_blank">virus mosaik</a>. Virus ini bisa menyebabkan daun tanaman melon berubah warna jadi bercak-bercak kuning atau hijau muda, yang dikenal sebagai mozaik. Bukan cuma itu, pertumbuhan tanaman juga jadi terganggu, buahnya kecil-kecil dan bentuknya nggak normal. Kalau infeksi virus mosaik ini sudah parah, tanaman bisa gagal berbuah. Virus ini biasanya ditularkan oleh serangga hama seperti kutu daun, jadi pencegahan utamanya adalah dengan mengendalikan hama pembawa virus tersebut.</p>
+        
+        <p>Dengan mengenali ancaman hama dan penyakit sejak dini, petani bisa ambil langkah-langkah yang tepat untuk melindungi tanaman melon mereka. Dalam tulisan ini, kita bakal bahas lebih lanjut cara-cara praktis buat mengenali gejala serangan dan ngatasinnya, supaya tanaman melon bisa tumbuh subur dan hasil panennya melimpah! Yuk, kita simak bareng-bareng cara menghadapi tantangan ini!</p>
+        
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide slide-active">
+                    <h2>Kutu Daun pada Tanaman Melon</h2>
+                    <img src="images/kutu daun.png" alt="Kutu Daun">
+                    <p>Kutu daun merupakan hama kecil yang sering menyerang bagian pucuk tanaman melon. Serangannya menyebabkan daun mengeriting dan menghambat pertumbuhan, serta bisa menyebarkan penyakit virus.</p>
+                    <a href="https://arifditlin.wordpress.com/2024/10/17/kutu-daun-pada-tanaman-melon/" class="cta-button" target="_blank">Baca Selengkapnya</a>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <h2>Ulat Grayak (Spodoptera Litura)</h2>
+                    <img src="images/gejala ulat grayak.png" alt="Ulat Grayak">
+                    <p>Ulat grayak adalah hama yang sangat merusak daun melon dengan cara menggerogoti jaringan daun. Serangan yang parah dapat menyebabkan daun mengering dan mengurangi hasil panen secara signifikan.</p>
+                    <a href="https://arifditlin.wordpress.com/2024/10/17/ulat-grayak-spodoptera-litura-ancaman-serius-bagi-tanaman-melon/" class="cta-button" target="_blank">Baca Selengkapnya</a>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <h2>Embun Bulu (Pseudoperonospora cubensis)</h2>
+                    <img src="images/embun bulu melon.png" alt="Embun Bulu">
+                    <p>Penyakit embun bulu disebabkan oleh jamur yang menginfeksi daun melon, menyebabkan bercak kuning dan akhirnya layu. Jika tidak ditangani dengan tepat, penyakit ini bisa menghambat proses fotosintesis tanaman.</p>
+                    <a href="https://arifditlin.wordpress.com/2024/10/17/embun-bulu-pseudoperonospora-cubensis-ancaman-bagi-pertumbuhan-tanaman-melon/" class="cta-button" target="_blank">Baca Selengkapnya</a>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <h2>Layu Fusarium (Fusarium Oxysporum)</h2>
+                    <img src="images/gejala layu fusarium.png" alt="Layu Fusarium">
+                    <p>Layu fusarium adalah penyakit yang menyebabkan tanaman melon tiba-tiba layu dan mati. Jamur ini bisa bertahan lama di tanah, sehingga pencegahan menjadi kunci untuk menghindari infeksi berulang.</p>
+                    <a href="https://arifditlin.wordpress.com/2024/10/17/layu-fusarium-fusarium-oxysporum-f-sp-melonis-ancaman-serius-bagi-tanaman-melon/" class="cta-button" target="_blank">Baca Selengkapnya</a>
+                </div>
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <h2>Virus Mosaik pada Tanaman Melon</h2>
+                    <img src="images/Melon Mozaik Virus.png" alt="Virus Mosaik">
+                    <p>Virus mosaik menyerang daun melon, menyebabkan perubahan warna dan pola mozaik yang tidak normal. Virus ini dapat menghambat pertumbuhan tanaman, menurunkan kualitas buah, dan menyebar dengan cepat melalui hama vektor.</p>
+                    <a href="https://arifditlin.wordpress.com/2024/10/17/virus-mosaik-pada-tanaman-melon/" class="cta-button" target="_blank">Baca Selengkapnya</a>
+                </div>
+            </div>
+
+          <!-- Navigasi Slider -->
+            <button class="nav-button prev" onclick="prevSlide()"><i class="fas fa-arrow-left"></i></button>
+            <button class="nav-button next" onclick="nextSlide()"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => {
+                slide.classList.remove('slide-active');
+            });
+            slides[index].classList.add('slide-active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
